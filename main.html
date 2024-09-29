@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Blast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+
+    
+        <div id="tamagotchi">
+            <h1>Your Tamagotchi:</h1>
+            <img id="tamagotchi-image" src="https://cdn-icons-png.flaticon.com/512/10404/10404228.png" alt="Tamagotchi">
+            
+            <p>Age: <span id="age">0</span> years</p>
+
+            <div>
+                <p>Hunger</p>
+                <div class="progress-bar" id="hunger-bar">
+                    <div class="progress hunger-progress" id="hunger-progress"></div>
+                </div>
+            </div>
+            
+            <div>
+                <p>Happiness</p>
+                <div class="progress-bar" id="happiness-bar">
+                    <div class="progress happiness-progress" id="happiness-progress"></div>
+                </div>
+            </div>
+            
+            <div>
+                <p>Energy</p>
+                <div class="progress-bar" id="energy-bar">
+                    <div class="progress energy-progress" id="energy-progress"></div>
+                </div>
+            </div>
+
+            <button onclick="feed()">Feed</button>
+            <button onclick="play()">Play</button>
+            <button onclick="rest()">Rest</button>
+        </div>
+    </div>
+    <audio id="eat-sound" src="/Users/zxcw/Library/CloudStorage/OneDrive-Trøndelagfylkeskommune/IT1/Tamagotchi/Minecraft Eating - Sound Effect (HD).mp3"></audio>
+</body>
+<script src="script.js"></script>
+</html>

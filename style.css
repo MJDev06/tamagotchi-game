@@ -1,0 +1,61 @@
+#container {
+    display: grid;
+    place-items: center; /* Centers content horizontally and vertically */
+    height: 100vh;
+}
+
+#tamagotchi-image {
+    width: 150px; /* Adjust this size as needed */
+    height: auto; /* Keep the aspect ratio */
+    display: block; /* Make sure it's treated as a block element */
+    margin: 10px auto; /* Center the image horizontally */
+}
+
+#tamagotchi {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+
+
+button {
+    margin: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures child elements don't overflow */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.progress {
+    height: 20px; /* Height of the progress bar */
+    background-color: #76c7c0; /* Color for the progress */
+    width: 0; /* Initial width */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.hunger-progress {
+    height: 20px; /* Height of the progress bar */
+    background-color: #ff7f50; /* Coral color for hunger */
+    width: 0; /* Initial width */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.happiness-progress {
+    height: 20px; /* Height of the progress bar */
+    background-color: #3cb371; /* Medium sea green for happiness */
+    width: 0; /* Initial width */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.energy-progress {
+    height: 20px; /* Height of the progress bar */
+    background-color: #1e90ff; /* Dodger blue for energy */
+    width: 0; /* Initial width */
+    transition: width 0.3s ease; /* Smooth transition */
+}
